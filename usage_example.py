@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# %%
 import numpy as np
 import matplotlib.pyplot as plt
 import pathlib
@@ -17,7 +17,6 @@ detectors = Detectors(fs)
 
 # selected detector by the user (default is the two average one)
 seldet = -1
-
 if len(sys.argv) > 1:
     seldet = int(sys.argv[1])
 else:
@@ -51,3 +50,5 @@ plt.plot(r_peaks, unfiltered_ecg[r_peaks], 'ro')
 plt.title("Detected R peaks")
 
 plt.show()
+
+# %%
